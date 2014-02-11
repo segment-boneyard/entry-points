@@ -34,7 +34,7 @@ describe('entries(path, fn)', function(){
   it('should add .bin scripts', function(done){
     find(__dirname + '/fixtures/bin', function(err, entries){
       if (err) return done(err);
-      assert(equal(['index.js', 'bin/foo', 'bin/bar'], entries));
+      assert(equal(['bin/foo', 'bin/bar'], entries));
       done();
     });
   });
