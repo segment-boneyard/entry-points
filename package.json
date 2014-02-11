@@ -1,0 +1,14 @@
+{
+  "name": "entry-points",
+  "version": "0.0.0",
+  "description": "Find a node module's possible entry points",
+  "repository": "segmentio/entry-points",
+  "license": "MIT",
+  "devDependencies": {
+    "deep-equal": "~0.2.1",
+    "mocha": "~1.17.1"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
