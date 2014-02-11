@@ -11,8 +11,10 @@
 ```js
 var find = require('entry-points');
 
-find(require('./package.json'));
-// ['index.js', 'bin/foo']
+find(__dirname, function(err, entries){
+  console.log(entries);
+  // ['index.js', 'bin/foo']
+});
 ```
 
 ## Installation
