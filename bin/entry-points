@@ -2,7 +2,7 @@
 
 var find = require('..');
 
-find('./', function(err, entries){
+find(process.cwd(), function(err, entries){
   if (err) throw err;
   console.log(entries.join('\n'));
 });
