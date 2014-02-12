@@ -13,5 +13,8 @@
   },
   "dependencies": {
     "resolve": "~0.6.1"
+  },
+  "bin": {
+    "entry-points": "bin/entry-points"
   }
 }
