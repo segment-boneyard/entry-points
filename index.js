@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 
+var presolve = require('path').resolve;
 var resolve = require('resolve');
 var join = require('path').join;
 var fs = require('fs');
@@ -36,7 +37,7 @@ module.exports = function(path, fn) {
       // bins
       
       if (pkg.bin) Object.keys(pkg.bin).forEach(function(name){
-        entries.push(join(path, pkg.bin[name]));
+        entries.push(presolve(join(path, pkg.bin[name])));
       });
       
       // filter duplicates
