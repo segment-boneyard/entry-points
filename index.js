@@ -29,7 +29,7 @@ module.exports = function(path, fn) {
       return fn(err);
     }
     
-    if (pkg.main && /\.js$/.test(pkg.main)) {
+    if (pkg.main && /\.js|\.json$/.test(pkg.main)) {
       onmain(pkg.main);
     } else {
       main = pkg.main || 'index';

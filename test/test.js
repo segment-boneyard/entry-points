@@ -17,6 +17,13 @@ describe('entries(path, fn)', function(){
       done();
     });
   });
+  it('should add .main', function(done){
+    find(__dirname + '/fixtures/json', function(err, entries){
+      if (err) return done(err);
+      assert(equal(['foo.json'], entries));
+      done();
+    });
+  });
   it('should add .js to .main', function(done){
     find(__dirname + '/fixtures/main2', function(err, entries){
       if (err) return done(err);
