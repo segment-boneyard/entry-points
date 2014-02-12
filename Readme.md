@@ -17,6 +17,15 @@ find(__dirname, function(err, entries){
 });
 ```
 
+  There's also a cli for quick inspection:
+
+```bash
+$ npm install -g entry-points
+$ entry-points
+index.js
+bin/foo
+```
+
 ## Installation
 
 ```bash
