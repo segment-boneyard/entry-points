@@ -1,6 +1,6 @@
 {
   "name": "entry-points",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find a node module's possible entry points",
   "repository": "segmentio/entry-points",
   "license": "MIT",
