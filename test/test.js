@@ -12,7 +12,8 @@ var fixtures = {
   'main3': ['foo.json'],
   'bin': ['bin/foo', 'bin/bar'],
   'dup': ['index.js'],
-  'lib': ['lib/index.js']
+  'lib': ['lib/index.js'],
+  'lib2': ['lib/index.js']
 };
 
 describe('entries(path, fn)', function(){
